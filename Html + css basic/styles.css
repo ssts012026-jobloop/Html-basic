@@ -1,0 +1,70 @@
+:root {
+    --primarycolor: orange;
+    --secondarycolor: yellow;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+    background-color: var(--secondarycolor);
+
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: var(--primarycolor);
+    border-bottom: solid 5px;
+    padding-left: 10%;
+
+}
+
+.heroSection {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(4, 20%);
+}
+
+.heroText {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    
+}
+
+.heroImg {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-height: 600px;
+    max-width: 400%;
+    padding-top: 20px;
+}
+
+.deleteSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+}
+
+.deleteButton {
+    border-radius: 15%;
+    border-style: dotted;
+    width: 200px;
+    height: 200px;
+
+}
+
+.hidden {
+    display: none;
+}
